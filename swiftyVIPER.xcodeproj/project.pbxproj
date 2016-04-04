@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7358B8A61CB1E75C007F0840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8A51CB1E75C007F0840 /* AppDelegate.swift */; };
+		7358B8B31CB3AF27007F0840 /* DataStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8B21CB3AF27007F0840 /* DataStoreType.swift */; };
+		7358B8B51CB3AF2F007F0840 /* TodoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8B41CB3AF2F007F0840 /* TodoType.swift */; };
 		7382F3B31CB14F3900A3BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7382F3B21CB14F3900A3BDDA /* Assets.xcassets */; };
 		7382F3B61CB14F3900A3BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7382F3B41CB14F3900A3BDDA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7358B8A51CB1E75C007F0840 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7358B8B21CB3AF27007F0840 /* DataStoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreType.swift; sourceTree = "<group>"; };
+		7358B8B41CB3AF2F007F0840 /* TodoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoType.swift; sourceTree = "<group>"; };
 		7382F3A81CB14F3900A3BDDA /* swiftyVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftyVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7382F3B21CB14F3900A3BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7382F3B51CB14F3900A3BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 				7358B8A51CB1E75C007F0840 /* AppDelegate.swift */,
 			);
 			path = application;
+			sourceTree = "<group>";
+		};
+		7358B8A71CB1E829007F0840 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8B11CB3AF22007F0840 /* datastore */,
+				7358B8B01CB3AF1D007F0840 /* entity */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7358B8B01CB3AF1D007F0840 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8B41CB3AF2F007F0840 /* TodoType.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		7358B8B11CB3AF22007F0840 /* datastore */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8B21CB3AF27007F0840 /* DataStoreType.swift */,
+			);
+			path = datastore;
 			sourceTree = "<group>";
 		};
 		7382F39F1CB14F3900A3BDDA = {
@@ -70,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				7358B8A41CB1E754007F0840 /* application */,
+				7358B8A71CB1E829007F0840 /* model */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -145,6 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7358B8A61CB1E75C007F0840 /* AppDelegate.swift in Sources */,
+				7358B8B51CB3AF2F007F0840 /* TodoType.swift in Sources */,
+				7358B8B31CB3AF27007F0840 /* DataStoreType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
