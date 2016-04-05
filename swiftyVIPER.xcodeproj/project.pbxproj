@@ -114,6 +114,7 @@
 				7382F3A41CB14F3900A3BDDA /* Sources */,
 				7382F3A51CB14F3900A3BDDA /* Frameworks */,
 				7382F3A61CB14F3900A3BDDA /* Resources */,
+				7358B8B61CB3B116007F0840 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -168,6 +169,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7358B8B61CB3B116007F0840 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7382F3A41CB14F3900A3BDDA /* Sources */ = {
