@@ -12,3 +12,14 @@ protocol TodoType {
     var title: String { get set }
     var dueDate: NSDate { get set }
 }
+
+struct TodoEntityItem: TodoType {
+
+    var title: String
+    var dueDate: NSDate
+
+    init(title: String, dueDate: NSDate) {
+        self.title   = title
+        self.dueDate = dueDate
+    }
+}

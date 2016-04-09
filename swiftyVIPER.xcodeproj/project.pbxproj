@@ -10,25 +10,82 @@
 		7358B8A61CB1E75C007F0840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8A51CB1E75C007F0840 /* AppDelegate.swift */; };
 		7358B8B31CB3AF27007F0840 /* DataStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8B21CB3AF27007F0840 /* DataStoreType.swift */; };
 		7358B8B51CB3AF2F007F0840 /* TodoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8B41CB3AF2F007F0840 /* TodoType.swift */; };
+		7358B8B81CB3B240007F0840 /* TodoRealmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8B71CB3B240007F0840 /* TodoRealmItem.swift */; };
+		7358B8BA1CB3B2E3007F0840 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7358B8B91CB3B2E3007F0840 /* Realm.framework */; };
+		7358B8BC1CB3B2E6007F0840 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7358B8BB1CB3B2E6007F0840 /* RealmSwift.framework */; };
+		7358B8BF1CB3B478007F0840 /* DataStoreRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8BE1CB3B478007F0840 /* DataStoreRealm.swift */; };
+		7358B8EC1CB3C64B007F0840 /* DataStoreRealmSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8EB1CB3C64B007F0840 /* DataStoreRealmSpec.swift */; };
+		7358B8EF1CB3C671007F0840 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7358B8ED1CB3C671007F0840 /* Nimble.framework */; };
+		7358B8F01CB3C671007F0840 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7358B8EE1CB3C671007F0840 /* Quick.framework */; };
+		7358B8F21CB3C686007F0840 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7358B8ED1CB3C671007F0840 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7358B8F31CB3C686007F0840 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7358B8EE1CB3C671007F0840 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7382F3B31CB14F3900A3BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7382F3B21CB14F3900A3BDDA /* Assets.xcassets */; };
 		7382F3B61CB14F3900A3BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7382F3B41CB14F3900A3BDDA /* LaunchScreen.storyboard */; };
+		73ED285A1CBA8E3A00AA42AC /* DataStoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ED28591CBA8E3A00AA42AC /* DataStoreUtils.swift */; };
+		73ED285C1CBA904200AA42AC /* NSDate+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ED285B1CBA904200AA42AC /* NSDate+Addition.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7358B8E31CB3C540007F0840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7382F3A01CB14F3900A3BDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7382F3A71CB14F3900A3BDDA;
+			remoteInfo = swiftyVIPER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7358B8F11CB3C67E007F0840 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7358B8F21CB3C686007F0840 /* Nimble.framework in CopyFiles */,
+				7358B8F31CB3C686007F0840 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7358B8A51CB1E75C007F0840 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7358B8B21CB3AF27007F0840 /* DataStoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreType.swift; sourceTree = "<group>"; };
 		7358B8B41CB3AF2F007F0840 /* TodoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoType.swift; sourceTree = "<group>"; };
+		7358B8B71CB3B240007F0840 /* TodoRealmItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRealmItem.swift; sourceTree = "<group>"; };
+		7358B8B91CB3B2E3007F0840 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		7358B8BB1CB3B2E6007F0840 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		7358B8BE1CB3B478007F0840 /* DataStoreRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreRealm.swift; sourceTree = "<group>"; };
+		7358B8DE1CB3C540007F0840 /* swiftyVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftyVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7358B8E21CB3C540007F0840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7358B8EB1CB3C64B007F0840 /* DataStoreRealmSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreRealmSpec.swift; sourceTree = "<group>"; };
+		7358B8ED1CB3C671007F0840 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		7358B8EE1CB3C671007F0840 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		7382F3A81CB14F3900A3BDDA /* swiftyVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftyVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7382F3B21CB14F3900A3BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7382F3B51CB14F3900A3BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7382F3B71CB14F3900A3BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73ED28591CBA8E3A00AA42AC /* DataStoreUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreUtils.swift; sourceTree = "<group>"; };
+		73ED285B1CBA904200AA42AC /* NSDate+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Addition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7358B8DB1CB3C540007F0840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7358B8EF1CB3C671007F0840 /* Nimble.framework in Frameworks */,
+				7358B8F01CB3C671007F0840 /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7382F3A51CB14F3900A3BDDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7358B8BA1CB3B2E3007F0840 /* Realm.framework in Frameworks */,
+				7358B8BC1CB3B2E6007F0840 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				7358B8B41CB3AF2F007F0840 /* TodoType.swift */,
+				7358B8B71CB3B240007F0840 /* TodoRealmItem.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -64,6 +122,52 @@
 			isa = PBXGroup;
 			children = (
 				7358B8B21CB3AF27007F0840 /* DataStoreType.swift */,
+				7358B8BE1CB3B478007F0840 /* DataStoreRealm.swift */,
+			);
+			path = datastore;
+			sourceTree = "<group>";
+		};
+		7358B8BD1CB3B2F9007F0840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8ED1CB3C671007F0840 /* Nimble.framework */,
+				7358B8EE1CB3C671007F0840 /* Quick.framework */,
+				7358B8BB1CB3B2E6007F0840 /* RealmSwift.framework */,
+				7358B8B91CB3B2E3007F0840 /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7358B8DF1CB3C540007F0840 /* swiftyVIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8E81CB3C626007F0840 /* classes */,
+				73ED28581CBA8E2200AA42AC /* testutils */,
+				7358B8E21CB3C540007F0840 /* Info.plist */,
+			);
+			path = swiftyVIPERTests;
+			sourceTree = "<group>";
+		};
+		7358B8E81CB3C626007F0840 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8E91CB3C631007F0840 /* model */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		7358B8E91CB3C631007F0840 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8EA1CB3C638007F0840 /* datastore */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7358B8EA1CB3C638007F0840 /* datastore */ = {
+			isa = PBXGroup;
+			children = (
+				7358B8EB1CB3C64B007F0840 /* DataStoreRealmSpec.swift */,
 			);
 			path = datastore;
 			sourceTree = "<group>";
@@ -72,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				7382F3AA1CB14F3900A3BDDA /* swiftyVIPER */,
+				7358B8DF1CB3C540007F0840 /* swiftyVIPERTests */,
+				7358B8BD1CB3B2F9007F0840 /* Frameworks */,
 				7382F3A91CB14F3900A3BDDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				7382F3A81CB14F3900A3BDDA /* swiftyVIPER.app */,
+				7358B8DE1CB3C540007F0840 /* swiftyVIPERTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +211,37 @@
 			path = classes;
 			sourceTree = "<group>";
 		};
+		73ED28581CBA8E2200AA42AC /* testutils */ = {
+			isa = PBXGroup;
+			children = (
+				73ED28591CBA8E3A00AA42AC /* DataStoreUtils.swift */,
+				73ED285B1CBA904200AA42AC /* NSDate+Addition.swift */,
+			);
+			path = testutils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7358B8DD1CB3C540007F0840 /* swiftyVIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7358B8E71CB3C540007F0840 /* Build configuration list for PBXNativeTarget "swiftyVIPERTests" */;
+			buildPhases = (
+				7358B8DA1CB3C540007F0840 /* Sources */,
+				7358B8DB1CB3C540007F0840 /* Frameworks */,
+				7358B8DC1CB3C540007F0840 /* Resources */,
+				7358B8F11CB3C67E007F0840 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7358B8E41CB3C540007F0840 /* PBXTargetDependency */,
+			);
+			name = swiftyVIPERTests;
+			productName = swiftyVIPERTests;
+			productReference = 7358B8DE1CB3C540007F0840 /* swiftyVIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7382F3A71CB14F3900A3BDDA /* swiftyVIPER */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7382F3BA1CB14F3900A3BDDA /* Build configuration list for PBXNativeTarget "swiftyVIPER" */;
@@ -135,6 +270,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Kohei Tabata";
 				TargetAttributes = {
+					7358B8DD1CB3C540007F0840 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7382F3A71CB14F3900A3BDDA;
+					};
 					7382F3A71CB14F3900A3BDDA = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -154,11 +293,19 @@
 			projectRoot = "";
 			targets = (
 				7382F3A71CB14F3900A3BDDA /* swiftyVIPER */,
+				7358B8DD1CB3C540007F0840 /* swiftyVIPERTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7358B8DC1CB3C540007F0840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7382F3A61CB14F3900A3BDDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,10 +337,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7358B8DA1CB3C540007F0840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7358B8EC1CB3C64B007F0840 /* DataStoreRealmSpec.swift in Sources */,
+				73ED285A1CBA8E3A00AA42AC /* DataStoreUtils.swift in Sources */,
+				73ED285C1CBA904200AA42AC /* NSDate+Addition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7382F3A41CB14F3900A3BDDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7358B8BF1CB3B478007F0840 /* DataStoreRealm.swift in Sources */,
+				7358B8B81CB3B240007F0840 /* TodoRealmItem.swift in Sources */,
 				7358B8A61CB1E75C007F0840 /* AppDelegate.swift in Sources */,
 				7358B8B51CB3AF2F007F0840 /* TodoType.swift in Sources */,
 				7358B8B31CB3AF27007F0840 /* DataStoreType.swift in Sources */,
@@ -201,6 +360,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7358B8E41CB3C540007F0840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7382F3A71CB14F3900A3BDDA /* swiftyVIPER */;
+			targetProxy = 7358B8E31CB3C540007F0840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7382F3B41CB14F3900A3BDDA /* LaunchScreen.storyboard */ = {
@@ -214,6 +381,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7358B8E51CB3C540007F0840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = swiftyVIPERTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerd0geek1.swiftyVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftyVIPER.app/swiftyVIPER";
+			};
+			name = Debug;
+		};
+		7358B8E61CB3C540007F0840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = swiftyVIPERTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerd0geek1.swiftyVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftyVIPER.app/swiftyVIPER";
+			};
+			name = Release;
+		};
 		7382F3B81CB14F3900A3BDDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -302,6 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = swiftyVIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerd0geek1.swiftyVIPER;
@@ -315,6 +523,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = swiftyVIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerd0geek1.swiftyVIPER;
@@ -325,6 +537,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7358B8E71CB3C540007F0840 /* Build configuration list for PBXNativeTarget "swiftyVIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7358B8E51CB3C540007F0840 /* Debug */,
+				7358B8E61CB3C540007F0840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7382F3A31CB14F3900A3BDDA /* Build configuration list for PBXProject "swiftyVIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
