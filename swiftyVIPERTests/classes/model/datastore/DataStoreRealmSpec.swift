@@ -13,19 +13,20 @@ import Nimble
 
 class DataStoreRealmSpec: QuickSpec {
 
+    var dataStoreUtils = DataStoreUtils(fileName: "DataStoreRealmSpec.realm")
     var dataStore: DataStoreRealm!
 
     override func spec() {
         beforeSuite {
-            self.dataStore = DataStoreUtils.setupRealmFile()
+            self.dataStore = self.dataStoreUtils.setupRealmFile()
         }
         afterSuite {
-            DataStoreUtils.tearDownRealmFile()
+            self.dataStoreUtils.tearDownRealmFile()
         }
         describe("DataStoreRealm") {
             describe("fetchTodoItems:", closure: {
                 beforeEach({
-                    DataStoreUtils.cleanupAllEntities()
+                    self.dataStoreUtils.cleanupAllEntities()
                 })
 
                 context("fetch items without saved items", closure: {
@@ -40,9 +41,9 @@ class DataStoreRealmSpec: QuickSpec {
 
                 context("fetch items without predicate", closure: {
                     it("returns all items", closure: {
-                        DataStoreUtils.saveFakeTodo("task1", dueDate: NSDate.today())
-                        DataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
-                        DataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
+                        self.dataStoreUtils.saveFakeTodo("task1", dueDate: NSDate.today())
+                        self.dataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
+                        self.dataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
 
                         let sortDescriptors: [GenericSortDescriptor] = [GenericSortDescriptor(key: "title", ascending: true)]
 
@@ -54,11 +55,11 @@ class DataStoreRealmSpec: QuickSpec {
 
                 context("fetch items with predicate", closure: {
                     it("returns filtered items", closure: {
-                        DataStoreUtils.saveFakeTodo("taskToday1", dueDate: NSDate.today())
-                        DataStoreUtils.saveFakeTodo("taskToday2", dueDate: NSDate.today())
-                        DataStoreUtils.saveFakeTodo("taskToday3", dueDate: NSDate.today())
-                        DataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
-                        DataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
+                        self.dataStoreUtils.saveFakeTodo("taskToday1", dueDate: NSDate.today())
+                        self.dataStoreUtils.saveFakeTodo("taskToday2", dueDate: NSDate.today())
+                        self.dataStoreUtils.saveFakeTodo("taskToday3", dueDate: NSDate.today())
+                        self.dataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
+                        self.dataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
 
                         let predicate: NSPredicate                   = NSPredicate.init(format: "dueDate == %@", NSDate.today())
                         let sortDescriptors: [GenericSortDescriptor] = [GenericSortDescriptor(key: "title", ascending: true)]
@@ -75,9 +76,9 @@ class DataStoreRealmSpec: QuickSpec {
                 context("fetch items with title sorting", closure: {
                     context("ascending case", closure: {
                         it("returns title ascending order", closure: {
-                            DataStoreUtils.saveFakeTodo("taskToday1", dueDate: NSDate.today())
-                            DataStoreUtils.saveFakeTodo("taskToday2", dueDate: NSDate.today())
-                            DataStoreUtils.saveFakeTodo("taskToday3", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("taskToday1", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("taskToday2", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("taskToday3", dueDate: NSDate.today())
 
                             let sortDescriptors: [GenericSortDescriptor] = [GenericSortDescriptor(key: "title", ascending: true)]
 
@@ -91,9 +92,9 @@ class DataStoreRealmSpec: QuickSpec {
                     })
                     context("descending case", closure: {
                         it("returns title ascending order", closure: {
-                            DataStoreUtils.saveFakeTodo("taskToday1", dueDate: NSDate.today())
-                            DataStoreUtils.saveFakeTodo("taskToday2", dueDate: NSDate.today())
-                            DataStoreUtils.saveFakeTodo("taskToday3", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("taskToday1", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("taskToday2", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("taskToday3", dueDate: NSDate.today())
 
                             let sortDescriptors: [GenericSortDescriptor] = [GenericSortDescriptor(key: "title", ascending: false)]
 
@@ -110,9 +111,9 @@ class DataStoreRealmSpec: QuickSpec {
                 context("fetch items with dueDate sorting", closure: {
                     context("ascending case", closure: {
                         it("returns dueDate ascending order", closure: {
-                            DataStoreUtils.saveFakeTodo("task1", dueDate: NSDate.today())
-                            DataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
-                            DataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
+                            self.dataStoreUtils.saveFakeTodo("task1", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
+                            self.dataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
 
                             let sortDescriptors: [GenericSortDescriptor] = [GenericSortDescriptor(key: "dueDate", ascending: true)]
 
@@ -126,9 +127,9 @@ class DataStoreRealmSpec: QuickSpec {
                     })
                     context("descending case", closure: {
                         it("returns dueDate ascending order", closure: {
-                            DataStoreUtils.saveFakeTodo("task1", dueDate: NSDate.today())
-                            DataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
-                            DataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
+                            self.dataStoreUtils.saveFakeTodo("task1", dueDate: NSDate.today())
+                            self.dataStoreUtils.saveFakeTodo("task2", dueDate: NSDate.today().addDays(1))
+                            self.dataStoreUtils.saveFakeTodo("task3", dueDate: NSDate.today().addDays(2))
 
                             let sortDescriptors: [GenericSortDescriptor] = [GenericSortDescriptor(key: "dueDate", ascending: false)]
 
@@ -144,16 +145,16 @@ class DataStoreRealmSpec: QuickSpec {
             })
             describe("save", closure: {
                 beforeEach({
-                    DataStoreUtils.cleanupAllEntities()
+                    self.dataStoreUtils.cleanupAllEntities()
                 })
                 it("increase saved entity count", closure: {
 
                     let todoItem: TodoEntityItem = TodoEntityItem(title: "title1", dueDate: NSDate.today())
                     self.dataStore.save(todoItem) { (error) in
                         expect{ error }.toEventually(beNil())
-                        expect{ DataStoreUtils.realm().objects(TodoRealmItem).count }.toEventually(equal(1))
+                        expect{ self.dataStoreUtils.realm().objects(TodoRealmItem).count }.toEventually(equal(1))
 
-                        let todoItem: TodoRealmItem = DataStoreUtils.realm().objects(TodoRealmItem).first!
+                        let todoItem: TodoRealmItem = self.dataStoreUtils.realm().objects(TodoRealmItem).first!
                         expect{ todoItem.title }.toEventually(equal("title1"))
                         expect{ todoItem.dueDate }.toEventually(equal(NSDate.today()))
                     }

@@ -12,28 +12,33 @@ import RealmSwift
 @testable import swiftyVIPER
 
 class DataStoreUtils {
-    static private let filePath: String = NSTemporaryDirectory().stringByAppendingString("/test.realm")
 
-    static func setupRealmFile() -> DataStoreRealm {
+    private let filePath: String
+
+    init(fileName: String) {
+        filePath = NSTemporaryDirectory().stringByAppendingString("/\(fileName)")
+    }
+
+    func setupRealmFile() -> DataStoreRealm {
         return DataStoreRealm(path: filePath)
     }
 
-    static func tearDownRealmFile() {
+    func tearDownRealmFile() {
         try! NSFileManager.defaultManager().removeItemAtPath(filePath)
     }
 
-    static func realm() -> Realm {
+    func realm() -> Realm {
         return try! Realm(path: filePath)
     }
 
-    static func cleanupAllEntities() {
+    func cleanupAllEntities() {
         let realm: Realm = self.realm()
         realm.beginWrite()
         realm.deleteAll()
         try! realm.commitWrite()
     }
 
-    static func saveFakeTodo(title: String, dueDate: NSDate) {
+    func saveFakeTodo(title: String, dueDate: NSDate) {
         try! realm().write {
             let todoItem: TodoRealmItem = TodoRealmItem()
             todoItem.setAttributes(title, dueDate: dueDate)

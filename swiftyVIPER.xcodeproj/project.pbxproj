@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730183741CBA95C3000F74C0 /* ListInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730183731CBA95C3000F74C0 /* ListInteractorSpec.swift */; };
 		7358B8A61CB1E75C007F0840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8A51CB1E75C007F0840 /* AppDelegate.swift */; };
 		7358B8B31CB3AF27007F0840 /* DataStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8B21CB3AF27007F0840 /* DataStoreType.swift */; };
 		7358B8B51CB3AF2F007F0840 /* TodoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8B41CB3AF2F007F0840 /* TodoType.swift */; };
@@ -22,6 +23,10 @@
 		7358B8FB1CB47098007F0840 /* DataManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8FA1CB47098007F0840 /* DataManagerType.swift */; };
 		7358B8FD1CB470C8007F0840 /* AddDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B8FC1CB470C8007F0840 /* AddDataManager.swift */; };
 		7358B9011CB471D7007F0840 /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B9001CB471D7007F0840 /* ListDataManager.swift */; };
+		7358B9051CB47E4B007F0840 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B9041CB47E4B007F0840 /* AddInteractor.swift */; };
+		7358B9071CB47ED2007F0840 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B9061CB47ED2007F0840 /* ListInteractor.swift */; };
+		7358B9091CB480C1007F0840 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B9081CB480C1007F0840 /* ListInteractorIO.swift */; };
+		7358B90C1CB484CE007F0840 /* NSDate+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B90B1CB484CE007F0840 /* NSDate+Addition.swift */; };
 		7382F3B31CB14F3900A3BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7382F3B21CB14F3900A3BDDA /* Assets.xcassets */; };
 		7382F3B61CB14F3900A3BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7382F3B41CB14F3900A3BDDA /* LaunchScreen.storyboard */; };
 		73ED285A1CBA8E3A00AA42AC /* DataStoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ED28591CBA8E3A00AA42AC /* DataStoreUtils.swift */; };
@@ -53,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		730183731CBA95C3000F74C0 /* ListInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorSpec.swift; sourceTree = "<group>"; };
 		7358B8A51CB1E75C007F0840 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7358B8B21CB3AF27007F0840 /* DataStoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreType.swift; sourceTree = "<group>"; };
 		7358B8B41CB3AF2F007F0840 /* TodoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoType.swift; sourceTree = "<group>"; };
@@ -68,6 +74,10 @@
 		7358B8FA1CB47098007F0840 /* DataManagerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerType.swift; sourceTree = "<group>"; };
 		7358B8FC1CB470C8007F0840 /* AddDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataManager.swift; sourceTree = "<group>"; };
 		7358B9001CB471D7007F0840 /* ListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
+		7358B9041CB47E4B007F0840 /* AddInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
+		7358B9061CB47ED2007F0840 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		7358B9081CB480C1007F0840 /* ListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
+		7358B90B1CB484CE007F0840 /* NSDate+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Addition.swift"; sourceTree = "<group>"; };
 		7382F3A81CB14F3900A3BDDA /* swiftyVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftyVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7382F3B21CB14F3900A3BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7382F3B51CB14F3900A3BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,6 +108,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		730183701CBA9583000F74C0 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				730183711CBA9597000F74C0 /* list */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		730183711CBA9597000F74C0 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				730183721CBA95A9000F74C0 /* applicationlogic */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		730183721CBA95A9000F74C0 /* applicationlogic */ = {
+			isa = PBXGroup;
+			children = (
+				730183731CBA95C3000F74C0 /* ListInteractorSpec.swift */,
+			);
+			path = applicationlogic;
+			sourceTree = "<group>";
+		};
 		7358B8A41CB1E754007F0840 /* application */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				7358B8E91CB3C631007F0840 /* model */,
+				730183701CBA9583000F74C0 /* modules */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -200,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				7358B8FC1CB470C8007F0840 /* AddDataManager.swift */,
+				7358B9041CB47E4B007F0840 /* AddInteractor.swift */,
 			);
 			path = applicationlogic;
 			sourceTree = "<group>";
@@ -224,8 +260,18 @@
 			isa = PBXGroup;
 			children = (
 				7358B9001CB471D7007F0840 /* ListDataManager.swift */,
+				7358B9081CB480C1007F0840 /* ListInteractorIO.swift */,
+				7358B9061CB47ED2007F0840 /* ListInteractor.swift */,
 			);
 			path = applicationlogic;
+			sourceTree = "<group>";
+		};
+		7358B90A1CB484B7007F0840 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				7358B90B1CB484CE007F0840 /* NSDate+Addition.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		7382F39F1CB14F3900A3BDDA = {
@@ -262,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				7358B8A41CB1E754007F0840 /* application */,
+				7358B90A1CB484B7007F0840 /* extension */,
 				7358B8A71CB1E829007F0840 /* model */,
 				7358B8F41CB47059007F0840 /* modules */,
 			);
@@ -399,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7358B8EC1CB3C64B007F0840 /* DataStoreRealmSpec.swift in Sources */,
+				730183741CBA95C3000F74C0 /* ListInteractorSpec.swift in Sources */,
 				73ED285A1CBA8E3A00AA42AC /* DataStoreUtils.swift in Sources */,
 				73ED285C1CBA904200AA42AC /* NSDate+Addition.swift in Sources */,
 			);
@@ -412,10 +460,14 @@
 				7358B9011CB471D7007F0840 /* ListDataManager.swift in Sources */,
 				7358B8FD1CB470C8007F0840 /* AddDataManager.swift in Sources */,
 				7358B8FB1CB47098007F0840 /* DataManagerType.swift in Sources */,
+				7358B9091CB480C1007F0840 /* ListInteractorIO.swift in Sources */,
 				7358B8B81CB3B240007F0840 /* TodoRealmItem.swift in Sources */,
 				7358B8A61CB1E75C007F0840 /* AppDelegate.swift in Sources */,
+				7358B9051CB47E4B007F0840 /* AddInteractor.swift in Sources */,
+				7358B9071CB47ED2007F0840 /* ListInteractor.swift in Sources */,
 				7358B8B51CB3AF2F007F0840 /* TodoType.swift in Sources */,
 				7358B8B31CB3AF27007F0840 /* DataStoreType.swift in Sources */,
+				7358B90C1CB484CE007F0840 /* NSDate+Addition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
