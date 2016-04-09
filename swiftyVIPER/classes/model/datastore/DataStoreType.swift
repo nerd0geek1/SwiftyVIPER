@@ -11,8 +11,8 @@ import Foundation
 protocol DataStoreType {
     func fetchTodoItems(predicate: NSPredicate?,
                         sortDescriptors: [GenericSortDescriptor],
-                        completion: ((todoItems: [TodoType], error: NSError?) -> Void)?)
-    func save(todoItem: TodoType, completion: (NSError? -> Void)?)
+                        completion: ((todoItems: [TodoEntityItem], error: NSError?) -> Void)?)
+    func save(todoItem: TodoEntityItem, completion: (NSError? -> Void)?)
 }
 
 struct GenericSortDescriptor {

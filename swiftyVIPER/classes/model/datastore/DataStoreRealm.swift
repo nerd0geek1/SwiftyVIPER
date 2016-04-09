@@ -30,7 +30,7 @@ class DataStoreRealm: DataStoreType {
 
     func fetchTodoItems(predicate: NSPredicate?,
                         sortDescriptors: [GenericSortDescriptor],
-                        completion: ((todoItems: [TodoType], error: NSError?) -> Void)?) {
+                        completion: ((todoItems: [TodoEntityItem], error: NSError?) -> Void)?) {
         var results: Results<TodoRealmItem>? = realm?.objects(TodoRealmItem)
 
 
@@ -44,7 +44,7 @@ class DataStoreRealm: DataStoreType {
             results = results?.sorted([sortDescriptor])
         }
 
-        let todoItems: [TodoType]
+        let todoItems: [TodoEntityItem]
         if let results = results {
             todoItems = results.map({ $0 }).map({ TodoEntityItem(title: $0.title, dueDate: $0.dueDate) })
         } else {
@@ -54,7 +54,7 @@ class DataStoreRealm: DataStoreType {
         completion?(todoItems: todoItems, error: nil)
     }
 
-    func save(todoItem: TodoType, completion: (NSError? -> Void)?) {
+    func save(todoItem: TodoEntityItem, completion: (NSError? -> Void)?) {
         let todoRealmItem: TodoRealmItem = TodoRealmItem()
         todoRealmItem.setAttributes(todoItem.title, dueDate: todoItem.dueDate)
 

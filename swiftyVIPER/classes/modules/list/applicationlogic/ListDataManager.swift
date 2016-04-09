@@ -29,8 +29,7 @@ class ListDataManager: DataManagerType {
         let predicate: NSPredicate = NSPredicate.init(format: "(dueDate <= %@) AND (%@ <= dueDate)", startDate, endDate)
         let sortDescriptor: GenericSortDescriptor = GenericSortDescriptor(key: sortType.rawValue, ascending: ascending)
         dataStore.fetchTodoItems(predicate, sortDescriptors: [sortDescriptor]) { (todoItems, error) in
-            let todoEntityItems = todoItems.map({ TodoEntityItem(title: $0.title, dueDate: $0.dueDate) })
-            completion(todoEntityItems, error)
+            completion(todoItems, error)
         }
     }
 }
